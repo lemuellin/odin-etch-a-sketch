@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #CCCCCC;
+}
+
+body{
+    font-family: 'Chicle', cursive;
+    color:black;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 10px 50px;
+    font-size: 60px;
+}
+
+#panel{
+    padding: 0px 60px 60px 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonList{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border: 20px solid #AD080F;
+    border-radius: 5%;
+
+}
+
+.grid{
+    box-sizing: border-box;
+    border: .1px solid black;
+}
+
+.btnColor, .btnRGB, .btnEraser, .btnCreate, .btnClear{
+    display: block;
+    font-family: 'Chicle', cursive;
+    font-size: 20px;
+    padding: 40px 20px 40px 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: #FF758F;
+    transition: transform .15s; /* animation*/
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: #FFF0F3;
+    transform: translateY(2px);
+}
